@@ -103,6 +103,28 @@
             .modal-body{
                 overflow-y:scroll;
             }
+            header form:focus-within{
+                outline:3px solid orange !important;
+                border-radius:10px;
+              }
+              .a_dropdown-menu{
+                height:370px;
+                overflow-y:scroll;
+              }
+              .a_dropdown-menu li a{
+                font-size:0.8em;
+              }
+              .a_dropdown-menu li a:hover{
+                background-color:#1B66D2;
+                color:#fff;
+              }
+              .sprite{
+                width:17px;
+                height:11px;
+                background-image: url("./img/sprite sheet.png");
+                background-position:-18px -36px;
+                background-repeat: no-repeat;
+              }
         </style>
     </head>
     <body>
@@ -243,21 +265,139 @@
     </div>
         </div>
           <header class="">
-m              <div class="">HeaderTop</div>
-               <div class="">
-                  <ul class="nav">
+            <div class="">
+                <div class="row m-0 h-100">
+                  <div class="col-3 a_tbdr">
+                    <ul class="nav h-100">
+                      <li class="nav-item mt-1 mb-1">
+                        <a class="nav-link active p-1" aria-current="page" href="#">
+                          <img width="114" class="img-fluid" src="./img/logo.png.png"/>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white p-0 ps-3 pe-3" href="#">
+                          <span class="d-block position-relative" style="font-size:.8em ;top:8px">Delivering to Bhopal 462030</span>
+                          <span class="d-block fw-bolder position-relative">
+                            <i class="fa-solid fa-location-dot position-absolute" style="left:-15px;font-size:1.2em"></i>Update Location</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-6 a_tbdr">
+                    <form class="row m-0 mt-2">
+                      <div class="col-1 p-0">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                      <div class="btn-group"  role="group">
+                      <button type="button" style="background-color:#D4D4D4 !important" class="btn btn-light dropdown-toggle rounded-0 rounded-start" data-bs-toggle="dropdown" aria-expanded="false">
+                              All
+                       </button>
+                       <div class="col-1 p-0">
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                      <div class="btn-group"  role="group">
+                     <ul class="dropdown-menu a_dropdown-menu rounded-3">
+                              <li><a class="dropdown-item" href="#">All Categories</a></li>
+                              <li><a class="dropdown-item" href="#">Amazon Devices</a></li>
+                              <li><a class="dropdown-item" href="#">Amazon fashion</a></li>
+                              <li><a class="dropdown-item" href="#">Amazon Pharmacy</a></li>
+                              <li><a class="dropdown-item" href="#">Appliances</a></li>
+                              <li><a class="dropdown-item" href="#">Apps & Games</a></li>
+                              <li><a class="dropdown-item" href="#">Audible Audiobooks</a></li>
+                              <li><a class="dropdown-item" href="#">Baby</a></li>
+                              <li><a class="dropdown-item" href="#">Beauty</a></li>
+                              <li><a class="dropdown-item" href="#">Books</a></li>
+                              <li><a class="dropdown-item" href="#">Car & Motorbikes</a></li>
+                              <li><a class="dropdown-item" href="#">Clothing & Accessories</a></li>
+                              <li><a class="dropdown-item" href="#">Collectibles</a></li>
+                              <li><a class="dropdown-item" href="#">Computers & Accessories</a></li>
+                              <li><a class="dropdown-item" href="#">Deals</a></li>
+                              <li><a class="dropdown-item" href="#">Electronics</a></li>
+                              <li><a class="dropdown-item" href="#">Furniture</a></li>
+                              <li><a class="dropdown-item" href="#">Garden & Outdoors</a></li>
+                              <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+                              <li><a class="dropdown-item" href="#">Grocery & Gourmet Foods</a></li>
+                              <li><a class="dropdown-item" href="#">Health & Personal Care</a></li>
+                              <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
+                              <li><a class="dropdown-item" href="#">Industrial & Scientific</a></li>
+                              <li><a class="dropdown-item" href="#">Jwellery</a></li>
+                              <li><a class="dropdown-item" href="#">Kindle Store</a></li>
+                              <li><a class="dropdown-item" href="#">Luggage & Bags</a></li>
+                              <li><a class="dropdown-item" href="#">Luxury Beauty</a></li>
+                              <li><a class="dropdown-item" href="#">Movies & TV Shows</a></li>
+                              <li><a class="dropdown-item" href="#">MP3 Music</a></li>
+                              <li><a class="dropdown-item" href="#">Music</a></li>
+                              <li><a class="dropdown-item" href="#">Music Instruments</a></li>
+                              <li><a class="dropdown-item" href="#">Office Products</a></li>
+                              <li><a class="dropdown-item" href="#">Pet Supplies</a></li>
+                              <li><a class="dropdown-item" href="#">Prime Video</a></li>
+                              <li><a class="dropdown-item" href="#">Shoes & Handbags</a></li>
+                              <li><a class="dropdown-item" href="#">Software</a></li>
+                              <li><a class="dropdown-item" href="#">Spots, Fitness & Outdoors</a></li>
+                              <li><a class="dropdown-item" href="#">Subscribe & Save</a></li>
+                              <li><a class="dropdown-item" href="#">Tools & Home Improvement</a></li>
+                              <li><a class="dropdown-item" href="#">Toys & Games</a></li>
+                              <li><a class="dropdown-item" href="#" >Under <i class="fa-solid fa-indian-rupee-sign"></i>500</a></li>
+                              <li><a class="dropdown-item" href="#">Video Games</a></li>
+                              <li><a class="dropdown-item" href="#">Watches</a></li>
+                           
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-10 p-0">
+                        <input type="search" class="form-control col-8 rounded-0"/>
+                        </div>
+                      </ul>
+                      
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="col-10 p-0">
+                        <input type="search" class="form-control col-8 rounded-0"/>
+                      </div>
+                      <div class="col-1 p-0 text-end">
+                        <button type="submit" class="w-100 btn btn-warning rounded-0 rounded-end">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-3 a_tbdr">
+                    <ul class="nav h-100">
+                      <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="#">
+                         <span class="sprite d-inline-block"></span>
+                          EN
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#">B</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#">C</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                          <i class="fa-solid fa-cart-shopping"></i>Cart</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+              <div class="">
+                <ul class="nav">
+                   <li class="nav-item">
+                    <a class="nav-link text-white active" aria-current="page" href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class="fa-solid fa-bars"></i> All</a>
+                   </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white active" aria-current="page" href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <i class="fa-solid fa-bars"></i> All</a>
-                    </li>
+                    <a class="nav-link text-white" href="#">Amazon mini TV</a>
+                  </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Amazon mini TV</a>
-                    </li>
+                    <a class="nav-link text-white" href="#">Sell</a>
+                   </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Sell</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Best Sellers</a>
+                    <a class="nav-link text-white" href="#">Best Sellers</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link text-white" href="#">Best Sellers</a>
